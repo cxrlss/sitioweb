@@ -1,0 +1,33 @@
+.card img {
+  border-bottom: 2px solid rgb(23, 157, 202);
+}
+.titulo h3 {
+  text-align: center;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.card-container {
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Alinea los elementos verticalmente */
+  height: 100%;
+  padding: 20px 5px 20px 5px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #f6fafb;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
